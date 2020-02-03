@@ -9,15 +9,20 @@ package emptyjavaproject;
  *
  * @author cameron.shinall
  */
-public class Rectangle {
+public class Rectangle extends Measurement {
     double width;
     double height;
     
     public Rectangle(double width, double height){
+        super(width);
         this.width = width;
         this.height = height;
-        
-        System.out.println("New Rectangle: " + width + " by " + height);
+    }
+    
+    @Override
+    public String toString(){
+        return "New Rectangle: " + width + " " + super.unit + " by "
+                + height + " " + super.unit;
     }
     
     public double getWidth(){
