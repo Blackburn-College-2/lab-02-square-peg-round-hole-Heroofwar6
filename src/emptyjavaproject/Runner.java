@@ -24,15 +24,31 @@ public class Runner {
         Ellipse shape6 = new Ellipse(4.0, 7.0);
         Circle shape7 = new Circle(5.0);
         Circle shape8 = new Circle(2.0);
-        
-        System.out.println(shape1.toString());
-        System.out.println(shape2.toString());
-        System.out.println(shape3.toString());
-        System.out.println(shape4.toString());
-        System.out.println(shape5.toString());
-        System.out.println(shape6.toString());
-        System.out.println(shape7.toString());
-        System.out.println(shape8.toString());
+
+        System.out.println("Rectangle of " + shape1.toString());
+        System.out.println("Rectangle of " + shape2.toString());
+        System.out.println("Square of " + shape3.toString());
+        System.out.println("Square of " + shape4.toString());
+        System.out.println("Ellipse with radius' of " + shape5.toString());
+        System.out.println("Ellipse with radius' of " + shape6.toString());
+        System.out.println("Circle with a radius of " + shape7.toString());
+        System.out.println("Circle with a radius of " + shape8.toString());
+        System.out.println(
+                shape1.getEfficiency(shape1.getPerimeter(), shape1.getArea()));
+        System.out.println(
+                shape2.getEfficiency(shape2.getPerimeter(), shape2.getArea()));
+        System.out.println(
+                shape3.getEfficiency(shape3.getPerimeter(), shape3.getArea()));
+        System.out.println(
+                shape4.getEfficiency(shape4.getPerimeter(), shape4.getArea()));
+        System.out.println(
+                shape5.getEfficiency(shape5.getPerimeter(), shape5.getArea()));
+        System.out.println(
+                shape6.getEfficiency(shape6.getPerimeter(), shape6.getArea()));
+        System.out.println(
+                shape7.getEfficiency(shape7.getPerimeter(), shape7.getArea()));
+        System.out.println(
+                shape8.getEfficiency(shape8.getPerimeter(), shape8.getArea()));
     }
-    
+
 }

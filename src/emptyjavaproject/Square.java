@@ -9,15 +9,12 @@ package emptyjavaproject;
  *
  * @author cameron.shinall
  */
-public class Square extends Rectangle{
+public class Square extends Rectangle {
+
     double side;
-    
-    public Square (double side){
-      super(side, side);
-      this.side = side;
-    }
-    @Override
-    public String toString(){
-        return "Square of " + side + " " + super.unit;
+
+    public Square(double side) {
+        super(side, side);
+        this.side = side;
     }
 }

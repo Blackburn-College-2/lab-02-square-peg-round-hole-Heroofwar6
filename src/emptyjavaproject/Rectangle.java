@@ -10,35 +10,42 @@ package emptyjavaproject;
  * @author cameron.shinall
  */
 public class Rectangle extends Measurement {
+
     double width;
     double height;
-    
-    public Rectangle(double width, double height){
-        super(width);
+
+    public Rectangle(double width, double height) {
+        super(width, height);
         this.width = width;
         this.height = height;
     }
-    
-    @Override
-    public String toString(){
-        return "New Rectangle: " + width + " " + super.unit + " by "
-                + height + " " + super.unit;
-    }
-    
-    public double getWidth(){
+    /**
+     * 
+     * @return the width of the rectangle
+     */
+    public double getWidth() {
         return width;
     }
-    
-    public double getHeight(){
+    /**
+     * 
+     * @return the height of the rectangle
+     */
+    public double getHeight() {
         return height;
     }
-    
-    public double getArea(){
+    /**
+     * 
+     * @return the area of the rectangle
+     */
+    public double getArea() {
         return width * height;
     }
-    
-    public double getPerimeter(){
+    /**
+     * 
+     * @return the perimeter of the rectangle
+     */
+    public double getPerimeter() {
         return 2 * (width + height);
     }
-    
+
 }
