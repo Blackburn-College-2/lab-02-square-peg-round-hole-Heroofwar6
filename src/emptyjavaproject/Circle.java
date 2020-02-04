@@ -17,12 +17,4 @@ public class Circle extends Ellipse {
         super(radius, radius);
         this.radius = radius;
     }
-    /**
-     * 
-     * @return the area of the circle
-     */
-    @Override
-    public double getPerimeter() {
-        return 2 * (Math.PI * this.radius);
-    }
 }

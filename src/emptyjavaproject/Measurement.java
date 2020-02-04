@@ -19,8 +19,9 @@ public class Measurement {
         this.value1 = value1;
         this.value2 = value2;
     }
+
     /**
-     * 
+     *
      * @return a string that measures the given shape
      */
     @Override
@@ -32,14 +33,15 @@ public class Measurement {
         }
         return howLong;
     }
+
     /**
-     * 
+     *
      * @param area the area of the given shape
-     * @param perimeter the perimeter of the given shape 
+     * @param perimeter the perimeter of the given shape
      * @return a string that gives the ratio of perimeter to area
      */
-    public String getEfficiency(double area, double perimeter) {
+    public String getEfficiency() {
         return "The ratio of perimeter to area for this shape is "
-                + perimeter + ":" + area;
+                + this.value1 + ":" + this.value2;
     }
 }
